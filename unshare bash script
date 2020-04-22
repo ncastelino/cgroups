@@ -1,0 +1,7 @@
+ncastelino@ncastelino-VirtualBox:~$ sudo unshare -p -f --mount-proc=$PWD/rootfs/proc \
+> chroot rootfs /bin/bash
+root@ncastelino-VirtualBox:/# ps aux
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.1  20264  3240 ?        S    21:08   0:00 /bin/bash
+root         2  0.0  0.0  17496  2104 ?        R+   21:20   0:00 ps aux
+root@ncastelino-VirtualBox:/# 
